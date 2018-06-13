@@ -17,6 +17,8 @@ body {
   margin: 0 auto;
 }
 
+/* header styles */
+
 header {
   background-image: url('../images/glasses-bg.png');
   background-size: cover;
@@ -55,6 +57,10 @@ nav {
   padding: 1rem 0;
 }
 
+.alt-nav {
+  display: none;
+}
+
 span {
   padding-right: 2rem;
 }
@@ -73,10 +79,12 @@ header .bottom {
 h1 {
   font-size: 2rem;
   font-weight: bold;
-  line-height: 1.2
+  line-height: 1.2;
   display: inline-block;
   padding: 1.5rem 5rem;
 }
+
+/* main section styles */
 
 .product-grid {
   display: flex;
@@ -130,6 +138,8 @@ h2 {
   padding: 0.5rem 0 0.5rem 1.25rem;
 }
 
+/* footer styles */
+
 footer {
   background-color: azure;
   padding: 4rem;
@@ -146,4 +156,142 @@ footer {
 
 .black span {
   color: black;
+}
+
+@media only screen and (max-width:960px) {
+
+  .container {
+    width: 100%
+  }
+
+  header {
+    height: 22rem;
+    padding-top: 0;
+    width: 100%;
+    margin: 0;
+
+  }
+
+  header .top {
+    position: fixed;
+  }
+  header .bottom {
+    position: relative;
+    top:3.5rem;
+  }
+
+  .banner {
+    margin-right: 2rem;
+    margin-top: 5rem;
+  }
+
+  h1 {
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+  }
+
+  footer {
+    margin: 0;
+    padding: 4rem 0;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  span {
+    display: none;
+  }
+
+  .alt-nav {
+    display: block;
+  }
+
+  .black span {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  .container {
+    width: 100%;
+  }
+
+  header {
+    height: 17rem;
+    padding-top: 0;
+    background-position: 20%;
+  }
+
+  header .top {
+    position: fixed;
+  }
+
+  header .bottom {
+    position: relative;
+    top:3.5rem;
+  }
+
+  .banner {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    top: 9rem;
+    text-align: center;
+  }
+
+  h1 {
+    padding: 1rem 0;
+    font-size: 1rem;
+  }
+
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+    height: auto;
+  }
+
+  .item {
+    margin: .77rem 0;
+    height: auto;
+  }
+
+  .item p {
+    font-size: 0.77rem;
+  }
+
+  .about {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .info {
+  width: 100%;
+  margin: 0 0 4rem 0;
+}
+
+  h2 {
+    width: 100%;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+
+  p {
+    font-size: 0.77rem;
+  }
+
+  .info p{
+    padding: 1rem;
+  }
+
+  footer {
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 4rem 0;
+  }
+
+  .black span {
+    display: none;
+  }
 }
