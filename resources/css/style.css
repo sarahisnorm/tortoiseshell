@@ -5,11 +5,11 @@
 
 html {
   font-size: 18px;
-  line-height: 1.4;
 }
 
 body {
   font-family: "Helvetica", sans-serif;
+  line-height: 1.4;
 }
 
 .container {
@@ -76,4 +76,56 @@ h1 {
   line-height: 1.2
   display: inline-block;
   padding: 1.5rem 5rem;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  height: 14rem;
+}
+
+.item {
+  margin: 3rem;
+  height: 8rem;
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tall img {
+  width: 3.5rem;
+  height: auto;
+}
+
+.wide img {
+  width: 5rem;
+  height: auto;
+}
+
+.item p {
+  text-align: center;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.info {
+  width: 35%;
+  height: auto;
+  margin: 0 2.5% 5rem 2.5%;
+}
+
+h2 {
+  font-weight: bold;
+  color: white;
+  background-color: cadetblue;
+  display: block;
+  width: 10rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0 0.5rem 1.25rem;
 }
